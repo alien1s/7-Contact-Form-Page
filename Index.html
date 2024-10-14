@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help you</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input
+                type="text"
+                name="user-name"
+                id="username"
+                placeholder="Saif Eldin. Attaia"
+                required
+              />
+            </li>
+            <li>
+              <label for="usermail">Your E-mail Address</label>
+              <input
+                type="email"
+                name="user-email"
+                id="usermail"
+                placeholder="ex@gamail.com"
+                required
+              />
+            </li>
+            <li>
+              <label for="userphone">Your Phone</label>
+              <input
+                type="text"
+                name="user-phone"
+                id="userphone"
+                placeholder="+xxxxxxxxxxxx"
+                minlength="11"
+                required
+              />
+            </li>
+            <li>
+              <label for="usermassage">Your Massage</label>
+              <textarea
+                id="usermassage"
+                name="user-massage"
+                minlength="10"
+                maxlength="200"
+                required
+              ></textarea>
+            </li>
+            <li>
+              <label for="channel"></label>
+              <select id="channel" name="user-channel" required>
+                <option>Web Search</option>
+                <option>Word of mouth</option>
+                <option>Social Media</option>
+                <option>On street</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-phone"
+                value="phone"
+                required
+              />
+              <label for="reply-phone">Call me</label>
+            </li>
+
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-email"
+                value="email"
+                required
+              />
+              <label for="reply-email">Send me an email</label>
+            </li>
+
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-none"
+                value="none"
+                required
+              />
+              <label for="reply-none">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="form-control-inline">
+            <input type="checkbox" id="accept-terms" name="terms" required />
+            <label for="agree-terms">Accept terms?</label>
+          </div>
+        </section>
+
+        <section id="b-contianer">
+          <button type="reset" id="b-r">Clear</button>
+          <button type="submit" id="b-s">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
